@@ -46,3 +46,12 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+
+#THIS MUST BE AT THE END OF THE FILE FOR JENV TO WORK!!!
+[[ -s "/Users/kristine/.jenv/bin/jenv-init.sh" ]] && source "/Users/kristine/.jenv/bin/jenv-init.sh" && source "/Users/kristine/.jenv/commands/completion.sh"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/kristine/.sdkman"
+[[ -s "/Users/kristine/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/kristine/.sdkman/bin/sdkman-init.sh"
+
+source "$HOME/.homesick/repos/homeshick/homeshick.sh"
